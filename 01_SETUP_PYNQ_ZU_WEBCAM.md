@@ -11,7 +11,7 @@
 ![Accuracy](https://img.shields.io/badge/Accuracy-94%25-brightgreen?style=for-the-badge)
 ![Speedup](https://img.shields.io/badge/Speedup-7.7x-red?style=for-the-badge)
 
-** [🏗️ Architecture](02_PROJECT_ARCHITECTURE.md) • [🧪 Results](03_RESULTS_TESTBENCH.md) • [⚙️ Implementation](04_IMPLEMENTATION_GUIDE.md)**
+**[🏗️ Architecture](02_PROJECT_ARCHITECTURE.md) • [🧪 Results](03_RESULTS_TESTBENCH.md) • [⚙️ Implementation](04_IMPLEMENTATION_GUIDE.md)**
 
 </div>
 
