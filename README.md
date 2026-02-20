@@ -103,7 +103,7 @@ python3 webcam_inference.py
 **That's it!** Real-time Alzheimer classification at 23 FPS ⚡
 
 ### 📚 Want More Details?
-→ See **[01_DETAILED_SETUP_DEPLOYMENT.md](01_DETAILED_SETUP_DEPLOYMENT.md)** for complete 6-phase setup
+→ See **[01_COMPLETE_SETUP_GUIDE.md](01_COMPLETE_SETUP_GUIDE.md)** for complete 6-phase setup
 
 ---
 
@@ -116,7 +116,7 @@ python3 webcam_inference.py
 
 | Document | 📝 Description | ⏱️ Read Time |
 |----------|---------------|------------|
-| **[01_DETAILED_SETUP_DEPLOYMENT.md](01_DETAILED_SETUP_DEPLOYMENT.md)** | 🔧 Complete hardware setup (6 phases) + live inference code | 30 min |
+| **[01_COMPLETE_SETUP_GUIDE.md](01_COMPLETE_SETUP_GUIDE.md)** | 🔧 Complete hardware setup (6 phases) + live inference code | 30 min |
 | **[02_PROJECT_ARCHITECTURE.md](02_PROJECT_ARCHITECTURE.md)** | 🏗️ How it works: System design, MobileNetV2, PS/PL partitioning | 25 min |
 | **[03_RESULTS_TESTBENCH.md](03_RESULTS_TESTBENCH.md)** | 📊 Performance metrics, accuracy, confusion matrix, validation | 20 min |
 | **[04_IMPLEMENTATION_GUIDE.md](04_IMPLEMENTATION_GUIDE.md)** | 📋 Week-by-week roadmap from scratch (beginner-friendly) | 40 min |
@@ -126,7 +126,7 @@ python3 webcam_inference.py
 - 🔨 **Just want to build it?** → [04_IMPLEMENTATION_GUIDE.md](04_IMPLEMENTATION_GUIDE.md)
 - 🏗️ **Want to understand it?** → [02_PROJECT_ARCHITECTURE.md](02_PROJECT_ARCHITECTURE.md)
 - 📊 **Want to see results?** → [03_RESULTS_TESTBENCH.md](03_RESULTS_TESTBENCH.md)
-- 🛠️ **Want to deploy it?** → [01_DETAILED_SETUP_DEPLOYMENT.md](01_DETAILED_SETUP_DEPLOYMENT.md)
+- 🛠️ **Want to deploy it?** → [01_COMPLETE_SETUP_GUIDE.md](01_COMPLETE_SETUP_GUIDE.md)
 
 </details>
 
@@ -139,7 +139,7 @@ alzheimer_pynq_zu/
 │
 ├─ 📖 Documentation
 │  ├─ README.md (this file) ← START HERE
-│  ├─ 01_DETAILED_SETUP_DEPLOYMENT.md
+│  ├─ 01_COMPLETE_SETUP_GUIDE.md
 │  ├─ 02_PROJECT_ARCHITECTURE.md
 │  ├─ 03_RESULTS_TESTBENCH.md
 │  └─ 04_IMPLEMENTATION_GUIDE.md
@@ -234,7 +234,7 @@ alzheimer_pynq_zu/
 - 4GB DDR4 RAM
 - Deep Learning Processor (DPU) B4096
 
-👉 Full specs in **[01_DETAILED_SETUP_DEPLOYMENT.md](01_DETAILED_SETUP_DEPLOYMENT.md)**
+👉 Full specs in **[01_COMPLETE_SETUP_GUIDE.md](01_COMPLETE_SETUP_GUIDE.md)**
 
 ---
 
@@ -346,7 +346,7 @@ Found this useful? **Star this repo!** ⭐ It helps others discover the project.
 ## 🤝 Get Help
 
 **Questions?** Check these in order:
-1. 📖 [Complete Documentation](01_DETAILED_SETUP_DEPLOYMENT.md)
+1. 📖 [Complete Documentation](01_COMPLETE_SETUP_GUIDE.md)
 2. 📊 [Results & Performance](03_RESULTS_TESTBENCH.md)
 3. 🏗️ [Architecture Guide](02_PROJECT_ARCHITECTURE.md)
 4. 🛠️ [Implementation Steps](04_IMPLEMENTATION_GUIDE.md)

@@ -9,7 +9,7 @@
 ![Model](https://img.shields.io/badge/Model-ResNet--50%20v2-blue?style=for-the-badge)
 ![Speedup](https://img.shields.io/badge/Speedup-7.7x-red?style=for-the-badge)
 
-**[📋 Setup](01_SETUP_PYNQ_ZU_WEBCAM.md) • [🧪 Results](03_RESULTS_TESTBENCH.md) • [⚙️ Implementation](04_IMPLEMENTATION_GUIDE.md)**
+**[📋 Setup](01_COMPLETE_SETUP_GUIDE.md) • [🧪 Results](03_RESULTS_TESTBENCH.md) • [⚙️ Implementation](04_IMPLEMENTATION_GUIDE.md)**
 
 </div>
 

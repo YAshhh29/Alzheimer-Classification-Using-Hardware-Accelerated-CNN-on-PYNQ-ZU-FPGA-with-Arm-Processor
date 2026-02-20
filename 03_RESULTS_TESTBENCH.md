@@ -8,7 +8,7 @@
 ![Accuracy](https://img.shields.io/badge/Accuracy-91.14%25-brightgreen?style=for-the-badge)
 ![Dataset](https://img.shields.io/badge/Dataset-8960%20Images-yellow?style=for-the-badge)
 
-**[📋 Setup](01_SETUP_PYNQ_ZU_WEBCAM.md) • [🏗️ Architecture](02_PROJECT_ARCHITECTURE.md) • [⚙️ Implementation](04_IMPLEMENTATION_GUIDE.md)**
+**[📋 Setup](01_COMPLETE_SETUP_GUIDE.md) • [🏗️ Architecture](02_PROJECT_ARCHITECTURE.md) • [⚙️ Implementation](04_IMPLEMENTATION_GUIDE.md)**
 
 </div>
 

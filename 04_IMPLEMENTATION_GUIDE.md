@@ -8,7 +8,7 @@
 ![Timeline](https://img.shields.io/badge/Timeline-4%20Weeks-yellowgreen?style=for-the-badge)
 ![Difficulty](https://img.shields.io/badge/Difficulty-Intermediate-orange?style=for-the-badge)
 
-**[📋 Setup](01_SETUP_PYNQ_ZU_WEBCAM.md) • [🏗️ Architecture](02_PROJECT_ARCHITECTURE.md) • [🧪 Results](03_RESULTS_TESTBENCH.md)**
+**[📋 Setup](01_COMPLETE_SETUP_GUIDE.md) • [🏗️ Architecture](02_PROJECT_ARCHITECTURE.md) • [🧪 Results](03_RESULTS_TESTBENCH.md)**
 
 </div>
 
@@ -294,7 +294,7 @@ ls /dev/video*
 
 ### Day 3-5: Run Live Demo
 
-Use the full webcam script from `01_SETUP_PYNQ_ZU_WEBCAM.md`.
+Use the full webcam script from `01_COMPLETE_SETUP_GUIDE.md` (Phase 6).
 
 Copy-paste the `webcam_inference.py` and run:
 
@@ -383,7 +383,7 @@ Now:
 Questions? Check the other markdown files:
 - `02_PROJECT_ARCHITECTURE.md` - How the model works
 - `03_RESULTS_TESTBENCH.md` - Performance numbers
-- `01_SETUP_PYNQ_ZU_WEBCAM.md` - Detailed hardware setup
+- `01_COMPLETE_SETUP_GUIDE.md` - Detailed hardware setup (all 6 phases)
 
 ---
 
