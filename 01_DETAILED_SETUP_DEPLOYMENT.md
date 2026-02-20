@@ -14,7 +14,119 @@ Your PYNQ-ZU board is a **heterogeneous computing system** - it combines:
 - **Xilinx Zynq UltraScale+ FPGA**: 117K LUTs, 1,248 DSPs in the PL (Programmable Logic)
 - **Deep Learning Processor (DPU)**: Specialized co-processor for CNN operations
 
+### Zynq UltraScale+ XCZU5EG-SFVC784 Specifications
+
+The PYNQ-ZU uses the **Xilinx XCZU5EG** SoC with these resources:
+
+| Resource | Count |
+|----------|-------|
+| System Logic Cells | 256 K |
+| CLB Flip-Flops | 234 K |
+| **CLB LUTs** | **117 K** |
+| Total Block RAM (BRAM) | 5.1 Mb |
+| Total Ultra RAM (URAM) | 18 Mb |
+| **DSP Slices** | **1,248** |
+
 This means:
+- **ARM handles**: Video capture, preprocessing, control logic
+- **FPGA handles**: CNN inference (7.7x faster than CPU!)
+- **Result**: Real-time classification at 23 FPS vs 3 FPS on CPU alone
+
+### Hardware/Software Partitioning: PS and PL
+
+The Zynq UltraScale+ uses a **heterogeneous architecture** where functionality is split between Processing System (PS) and Programmable Logic (PL):
+
+#### Processing System (PS) - ARM Cortex-A53
+
+**Connected Peripherals:**
+- 4GB DDR4 RAM
+- Micro SD card port
+- Mini Display Port (DP output)
+- WiFi + Bluetooth Module
+- 2× 2-Stacked USB 3.0 Hubs
+- USB 3.0 Composite Device (Micro USB 3.0)
+- TPM Pmod
+- I2C / PMBus
+- UART (serial console)
+- Grove Connector (1×)
+
+**Responsibilities:**
+- Boot Linux kernel
+- Run Jupyter Lab
+- Manage video capture via V4L2
+- Preprocess MRI images
+- Control DPU via Vitis AI library
+- Handle post-processing
+
+#### Programmable Logic (PL) - FPGA Fabric
+
+**Connected Peripherals:**
+- HDMI In and HDMI Out
+- Audio Codec
+- FMC LPC (FPGA Mezzanine Card slot)
+- Dual SYZYGY Interfaces
+- 40-pin Raspberry Pi Connector
+- Grove Connectors (2×)
+- Pmod Connectors (2×)
+- CSI Camera Interface
+- XADC (Analog/Digital Converter)
+- 4× Switches, 4× Push Buttons
+- 4× LEDs, 2× RGB LEDs
+
+**Responsibilities:**
+- Deep Learning Processor (DPU) synthesis
+- Convolution, pooling operations
+- Data path optimization
+- Direct Memory Access (DMA) to DDR4
+
+### Memory Architecture & DMA
+
+The PS and PL are tightly coupled:
+
+![PS/PL Architecture & Memory Connections](images/ps_pl_architecture.png)
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                 XCZU5EG SoC                             │
+│                                                         │
+│  ┌────────────────────────────────────────────────┐   │
+│  │  Processing System (PS)                        │   │
+│  │  ARM Cortex-A53 @ 1.5 GHz                     │   │
+│  │  ├─ Linux Kernel                              │   │
+│  │  ├─ Python 3.8+ Runtime                       │   │
+│  │  ├─ Vitis AI Library                          │   │
+│  │  └─ Video Capture (V4L2)                      │   │
+│  └────────────────────────────────────────────────┘   │
+│         ↕ AXI High Performance (128-bit)              │
+│  ┌────────────────────────────────────────────────┐   │
+│  │ Programmable Logic (PL)                        │   │
+│  │ ├─ Deep Learning Processor (DPU - B4096)     │   │
+│  │ │  • 8×16×16 parallelism (2048 ops/cycle)    │   │
+│  │ │  • 300M MACs per inference                  │   │
+│  │ ├─ BRAM/URAM (weights & feature maps)        │   │
+│  │ └─ DMA Controllers                            │   │
+│  └────────────────────────────────────────────────┘   │
+│         ↕                                              │
+│  ┌────────────────────────────────────────────────┐   │
+│  │ Shared DDR4 Memory (4 GB)                      │   │
+│  │ ├─ Image buffers                              │   │
+│  │ ├─ Model weights (quantized)                  │   │
+│  │ ├─ Feature maps                               │   │
+│  │ └─ Results                                    │   │
+│  └────────────────────────────────────────────────┘   │
+│                                                         │
+└─────────────────────────────────────────────────────────┘
+```
+
+**Key points:**
+- PS and PL share DDR4 via AXI interconnect
+- DMA allows FPGA to access memory without CPU overhead
+- Accelerator Coherency Port (ACP) maintains cache coherency
+- This shared memory is critical for fast CNN inference
+
+---
+
+## This means:
 - **ARM handles**: Video capture, preprocessing, control logic
 - **FPGA handles**: CNN inference (7.7x faster than CPU!)
 - **Result**: Real-time classification at 23 FPS vs 3 FPS on CPU alone
@@ -43,6 +155,8 @@ This means:
 ---
 
 ## Phase 1: Firmware Initialization & OS Boot
+
+![PYNQ-ZU Board Overview](images/pynq_zu_board_overview.png)
 
 The PYNQ board goes through a sophisticated multi-stage boot process.
 
@@ -82,6 +196,8 @@ When you power on the board:
 
 ### Step 2: First Power-On
 
+![PYNQ-ZU Board LED Indicators](images/pynq_zu_leds.png)
+
 1. Ensure microSD card is fully inserted (click until it stops)
 2. Connect 12V power supply
 3. Wait 30 seconds
@@ -111,6 +227,8 @@ If ping fails, check your router's DHCP client list for "pynq" device.
 ## Phase 2: Access the Jupyter IDE
 
 Once the board is booted and connected, you'll interact with it via Jupyter Lab (a web-based Python IDE).
+
+![Jupyter Lab Interface](images/jupyter_lab_interface.png)
 
 ### Connecting to Jupyter
 
@@ -241,6 +359,8 @@ ls -lh /home/xilinx/dpu.*
 
 ### Test DPU Initialization
 
+![DPU Block Diagram](images/dpu_architecture.png)
+
 Create `test_dpu.py`:
 
 ```python
@@ -296,6 +416,8 @@ else:
 ### The Complete Inference Script
 
 Create `webcam_inference.py`:
+
+![Real-time Inference Flow Diagram](images/inference_pipeline.png)
 
 ```python
 #!/usr/bin/env python3

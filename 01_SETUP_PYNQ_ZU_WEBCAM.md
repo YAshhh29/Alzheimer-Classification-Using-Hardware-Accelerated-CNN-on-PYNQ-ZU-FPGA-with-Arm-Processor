@@ -537,4 +537,4 @@ A window will pop up showing live classifications!
 
 ---
 
-That's it! Your PYNQ-ZU is now running live Alzheimer classification with a webcam. 🎉
+That's it! Your PYNQ-ZU is now running live Alzheimer classification with a webcam.

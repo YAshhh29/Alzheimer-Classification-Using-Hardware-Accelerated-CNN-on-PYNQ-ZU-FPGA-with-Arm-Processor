@@ -43,6 +43,8 @@ So we built a solution that runs **right on edge hardware** (FPGA) in the hospit
             └─────────────────────────┘
 ```
 
+![Hardware Architecture Diagram](images/hardware_architecture.png)
+
 ## How It Works - Step by Step
 
 ### 1. Input: Brain MRI Image
@@ -139,6 +141,8 @@ Output from FPGA: [0.02, 0.05, 0.78, 0.15]
 
 ## Why FPGA Acceleration?
 
+![Performance Comparison: CPU vs FPGA](images/performance_comparison.png)
+
 ### Speed Comparison
 
 | Component | CPU (ARM only) | FPGA | Speedup |
@@ -159,6 +163,8 @@ In a hospital scanning 100 patients/day, this saves ~6.5 kWh daily = real cost s
 ## The Training Process
 
 Here's what happened before deployment:
+
+![Training Pipeline](images/training_pipeline.png)
 
 ```
 Step 1: Get Dataset

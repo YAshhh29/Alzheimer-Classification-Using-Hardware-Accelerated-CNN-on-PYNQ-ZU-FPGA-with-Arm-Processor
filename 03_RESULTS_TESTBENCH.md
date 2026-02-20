@@ -1,5 +1,7 @@
 # Test Bench & Results
 
+![Model Performance Metrics](images/model_performance_metrics.png)
+
 ## Model Performance Overview
 
 Here's how our model performs on real data.
@@ -33,6 +35,8 @@ Here's the breakdown by dementia stage:
 ## Confusion Matrix
 
 This shows where the model gets confused:
+
+![Confusion Matrix Heatmap](images/confusion_matrix.png)
 
 ```
                 Predicted →
@@ -84,6 +88,8 @@ Moderate       6      2       1       231
 
 We tested the model 5 times with different data splits:
 
+![Cross-Validation Results](images/cross_validation.png)
+
 ```
 Fold 1: 93.5%
 Fold 2: 92.8%
@@ -101,6 +107,8 @@ Mean:   93.3% ± 0.5%
 ## Training History
 
 ### Accuracy Over Time
+
+![Training History - Accuracy Curves](images/training_accuracy.png)
 
 ```
 Epoch | Phase | Train Acc | Test Acc | Notes
