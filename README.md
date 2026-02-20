@@ -56,7 +56,7 @@ Real-time **medical image classification** using edge AI! 🏥 We classify brain
 - Hardware-optimized MobileNetV2
 
 🧠 **Smart Architecture**
-- MobileNetV2 for efficiency
+- Resnet50 for efficiency
 - INT8 quantization (75% smaller)
 - Transfer learning pre-trained
 
@@ -66,7 +66,7 @@ Real-time **medical image classification** using edge AI! 🏥 We classify brain
 📊 **93% Accuracy**
 - 960 test images validated
 - All 4 dementia classes covered
-- Cross-validation tested
+
 
 🔧 **Production Ready**
 - Complete Python code examples
