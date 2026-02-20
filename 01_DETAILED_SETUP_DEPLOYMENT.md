@@ -359,8 +359,6 @@ ls -lh /home/xilinx/dpu.*
 
 ### Test DPU Initialization
 
-![Vitis AI and DPU Architecture](images/Vitis%20AI%20Docker.png)
-
 Create `test_dpu.py`:
 
 ```python
