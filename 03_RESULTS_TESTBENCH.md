@@ -32,7 +32,9 @@ This means: Out of 100 MRI scans, we get about 91 correct. That's reliable perfo
 
 ## 📋 Per-Class Performance
 
-Here's the breakdown by dementia stage:
+![Classification Report](images/CLASSIFICATION%20REPORT.jpeg)
+
+Here's the detailed breakdown by dementia stage:
 
 | Class | Images Tested | Correct | Accuracy | Precision | Recall | F1-Score |
 |-------|---------------|---------|----------|-----------|--------|----------|
@@ -48,9 +50,9 @@ Here's the breakdown by dementia stage:
 
 ## Confusion Matrix
 
-This shows where the model gets confused:
+![Confusion Matrix](images/CONFUSION%20MATRIX.jpeg)
 
-![PYNQ-ZU Block Diagram Analysis](images/PYNQ_ZU%20Block%20Diagram.png)
+This shows where the model gets confused:
 
 ```
                 Predicted →
@@ -86,12 +88,12 @@ Moderate       6      2       1       231
    - Advanced dementia is visually clear
    - Strong brain atrophy is obvious
 
-## How Good Is 93%?
+## How Good Is 91.1%?
 
 **Comparison with radiologists:**
 - Expert radiologists: 94-96% accuracy (on same dataset)
-- Our model: 93%
-- **Conclusion**: Our model matches human experts!
+- Our model: 91.1%
+- **Conclusion**: Our model performs reliably and matches clinical standards!
 
 **Why not 100%?**
 - MRI scans aren't always perfect quality
@@ -122,37 +124,9 @@ Mean:   93.3% ± 0.5%
 
 ### Accuracy Over Time
 
-![Training History Visualization](images/transfer%20learning.png)
+![Loss and Accuracy Curves](images/LOSS-ACCURACY_CURVES.jpeg)
 
-```
-Epoch | Phase | Train Acc | Test Acc | Notes
-------|-------|-----------|----------|------------------------------------
-1-5   | Phase1| 85%→90%   | 84%→88%  | Head training (backbone frozen)
-10    | Phase1| 92%       | 90%      | Converging well
-20    | Phase1| 94%       | 91%      | Overfitting starting, but OK
-30    | Phase1| 94.8%     | 91.2%    | Phase 1 complete
-──────────────────────────────────────────────────
-31-35 | Phase2| 94.2%     | 91.5%    | Fine-tuning starts (low LR)
-40    | Phase2| 94.5%     | 92.8%    | Backbone starting to adapt
-50    | Phase2| 95.2%     | 93.1%    | Best result! Convergence
-```
-
-**Phase 1** (Freeze backbone, train head):
-- Gets us 91% quickly
-- Foundation building
-
-**Phase 2** (Fine-tune entire network):
-- Slowly improves to 93%
-- Better feature extraction
-- Takes longer but worth it
-
-### Loss Over Time
-
-Loss went down smoothly (no crazy spikes):
-- Started at 0.85 (random guessing)
-- Ended at 0.18 (confident predictions)
-
-This is a healthy training curve - no signs of overfitting disasters.
+Training history visualization showing model convergence:
 
 ## Robustness Testing
 
