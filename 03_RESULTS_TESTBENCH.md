@@ -14,12 +14,6 @@
 
 ---
 
-## 📊 Model Performance Overview
-
-![Vitis AI Performance Analysis](images/Vitis%20AI%20Docker.png)
-
-Here's how our model performs on real data.
-
 ## 🎯 Overall Accuracy
 
 **Test Set Results:**
