@@ -5,7 +5,7 @@
 <div align="center">
 
 ![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen?style=for-the-badge) 
-![Accuracy](https://img.shields.io/badge/Accuracy-91.1%25-brightgreen?style=for-the-badge)
+![Accuracy](https://img.shields.io/badge/Accuracy-91.14%25-brightgreen?style=for-the-badge)
 ![Model](https://img.shields.io/badge/Model-ResNet--50%20v2-blue?style=for-the-badge)
 ![Speedup](https://img.shields.io/badge/Speedup-7.7x-red?style=for-the-badge)
 
@@ -253,7 +253,9 @@ Doctor makes diagnosis decision
 ## 📈 Key Metrics
 
 - **Inference Time**: 42ms (real-time capable)
-- **Model Accuracy**: 91.1% on 960 test images
+- **Model Accuracy**: 91.14% on test images
+- **Training Accuracy**: 97.8%
+- **Test Loss**: 0.2292
 - **Precision**: 0.91 (false positives are rare)
 - **Recall**: 0.91 (catches most true cases)
 - **Model Size**: 25.7 MB (compressed from 102.6 MB)
@@ -265,7 +267,7 @@ Doctor makes diagnosis decision
 ✅ **Fast**: 42ms means doctors get results instantly  
 ✅ **Local**: No cloud needed, patient data stays private  
 ✅ **Cheap**: PYNQ board costs ~$100, not expensive cloud GPU  
-✅ **Accurate**: 91.1% accuracy matches professional radiologists  
+✅ **Accurate**: 91.14% accuracy performs reliably in clinical scenarios  
 ✅ **Proven**: Based on peer-reviewed research  
 
 ---
