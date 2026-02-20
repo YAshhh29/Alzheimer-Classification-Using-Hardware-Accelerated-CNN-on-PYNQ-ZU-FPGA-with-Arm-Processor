@@ -8,7 +8,7 @@
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge) 
 ![FPGA](https://img.shields.io/badge/FPGA-Xilinx%20PYNQ--ZU-orange?style=for-the-badge) 
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-![Accuracy](https://img.shields.io/badge/Accuracy-94%25-brightgreen?style=for-the-badge)
+![Accuracy](https://img.shields.io/badge/Accuracy-91.1%25-brightgreen?style=for-the-badge)
 ![Speedup](https://img.shields.io/badge/Speedup-7.7x-red?style=for-the-badge)
 
 **[🚀 Quick Start](#-quick-start) • [📚 Docs](#-complete-documentation) • [✨ Features](#-key-features) • [👥 Team](#-contributors) • [📄 License](#-license)**
@@ -35,7 +35,7 @@ Real-time **medical image classification** using edge AI! 🏥 We classify brain
 | 📺 **Live FPS** | 3 FPS | 23 FPS | **7.7× more** 🎬 |
 | 💾 **Model Size** | 13.8 MB | 3.5 MB | **75% smaller** 📉 |
 | 🔋 **Power** | 3.7W | 2.5W | **32% efficient** 🌱 |
-| 🎯 **Accuracy** | 95.2% | 94% | **Clinical-grade** ✅ |
+| 🎯 **Accuracy** | 95.2% | 91.1% | **Clinical-grade** ✅ |
 
 </div>
 

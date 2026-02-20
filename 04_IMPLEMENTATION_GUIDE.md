@@ -1,17 +1,14 @@
 # 🧠 Getting Started: Implementation Guide
 
-## ⚡ Hardware-Accelerated Brain MRI Analysis System
+## 🛠️ Step-by-Step Deployment
 
 <div align="center">
 
-![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen?style=for-the-badge) 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge) 
-![FPGA](https://img.shields.io/badge/FPGA-Xilinx%20PYNQ--ZU-orange?style=for-the-badge) 
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-![Accuracy](https://img.shields.io/badge/Accuracy-94%25-brightgreen?style=for-the-badge)
-![Speedup](https://img.shields.io/badge/Speedup-7.7x-red?style=for-the-badge)
+![Implementation](https://img.shields.io/badge/Implementation-Step--by--Step-blue?style=for-the-badge)
+![Timeline](https://img.shields.io/badge/Timeline-4%20Weeks-yellowgreen?style=for-the-badge)
+![Difficulty](https://img.shields.io/badge/Difficulty-Intermediate-orange?style=for-the-badge)
 
-**[📖 Documentation](../README.md#-complete-documentation) • [📋 Setup](01_SETUP_PYNQ_ZU_WEBCAM.md) • [🏗️ Architecture](02_PROJECT_ARCHITECTURE.md) • [🧪 Results](03_RESULTS_TESTBENCH.md)**
+**[📋 Setup](01_SETUP_PYNQ_ZU_WEBCAM.md) • [🏗️ Architecture](02_PROJECT_ARCHITECTURE.md) • [🧪 Results](03_RESULTS_TESTBENCH.md)**
 
 </div>
 

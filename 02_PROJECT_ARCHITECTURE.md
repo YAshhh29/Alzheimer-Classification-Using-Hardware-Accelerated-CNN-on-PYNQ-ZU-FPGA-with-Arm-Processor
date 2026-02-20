@@ -5,13 +5,11 @@
 <div align="center">
 
 ![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen?style=for-the-badge) 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge) 
-![FPGA](https://img.shields.io/badge/FPGA-Xilinx%20PYNQ--ZU-orange?style=for-the-badge) 
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-![Accuracy](https://img.shields.io/badge/Accuracy-94%25-brightgreen?style=for-the-badge)
+![Accuracy](https://img.shields.io/badge/Accuracy-91.1%25-brightgreen?style=for-the-badge)
+![Model](https://img.shields.io/badge/Model-ResNet--50%20v2-blue?style=for-the-badge)
 ![Speedup](https://img.shields.io/badge/Speedup-7.7x-red?style=for-the-badge)
 
-**[📖 Documentation](../README.md#-complete-documentation) • [📋 Setup](01_SETUP_PYNQ_ZU_WEBCAM.md) • [🧪 Results](03_RESULTS_TESTBENCH.md) • [⚙️ Implementation](04_IMPLEMENTATION_GUIDE.md)**
+**[📋 Setup](01_SETUP_PYNQ_ZU_WEBCAM.md) • [🧪 Results](03_RESULTS_TESTBENCH.md) • [⚙️ Implementation](04_IMPLEMENTATION_GUIDE.md)**
 
 </div>
 
@@ -258,9 +256,9 @@ Doctor makes diagnosis decision
 ## 📈 Key Metrics
 
 - **Inference Time**: 42ms (real-time capable)
-- **Model Accuracy**: 94% on 960 test images
-- **Precision**: 0.94 (false positives are rare)
-- **Recall**: 0.94 (catches most true cases)
+- **Model Accuracy**: 91.1% on 960 test images
+- **Precision**: 0.91 (false positives are rare)
+- **Recall**: 0.91 (catches most true cases)
 - **Model Size**: 25.7 MB (compressed from 102.6 MB)
 - **Power**: 4.2W (stays cool, no active cooling needed)
 - **Network Depth**: 50 residual layers (ResNet-50 v2)
@@ -270,7 +268,7 @@ Doctor makes diagnosis decision
 ✅ **Fast**: 42ms means doctors get results instantly  
 ✅ **Local**: No cloud needed, patient data stays private  
 ✅ **Cheap**: PYNQ board costs ~$100, not expensive cloud GPU  
-✅ **Accurate**: 93% accuracy matches professional radiologists  
+✅ **Accurate**: 91.1% accuracy matches professional radiologists  
 ✅ **Proven**: Based on peer-reviewed research  
 
 ---

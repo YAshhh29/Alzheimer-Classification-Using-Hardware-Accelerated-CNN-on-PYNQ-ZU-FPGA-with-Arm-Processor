@@ -1,17 +1,14 @@
 # 🧠 Test Bench & Results
 
-## ⚡ Hardware-Accelerated Brain MRI Analysis System
+## 📊 Performance Analysis
 
 <div align="center">
 
-![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen?style=for-the-badge) 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge) 
-![FPGA](https://img.shields.io/badge/FPGA-Xilinx%20PYNQ--ZU-orange?style=for-the-badge) 
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-![Accuracy](https://img.shields.io/badge/Accuracy-94%25-brightgreen?style=for-the-badge)
-![Speedup](https://img.shields.io/badge/Speedup-7.7x-red?style=for-the-badge)
+![Results](https://img.shields.io/badge/Results-Performance%20Tested-blue?style=for-the-badge)
+![Accuracy](https://img.shields.io/badge/Accuracy-91.1%25-brightgreen?style=for-the-badge)
+![Dataset](https://img.shields.io/badge/Dataset-960%20Images-yellow?style=for-the-badge)
 
-**[📖 Documentation](../README.md#-complete-documentation) • [📋 Setup](01_SETUP_PYNQ_ZU_WEBCAM.md) • [🏗️ Architecture](02_PROJECT_ARCHITECTURE.md) • [⚙️ Implementation](04_IMPLEMENTATION_GUIDE.md)**
+**[📋 Setup](01_SETUP_PYNQ_ZU_WEBCAM.md) • [🏗️ Architecture](02_PROJECT_ARCHITECTURE.md) • [⚙️ Implementation](04_IMPLEMENTATION_GUIDE.md)**
 
 </div>
 
@@ -27,11 +24,11 @@ Here's how our model performs on real data.
 
 **Test Set Results:**
 - **Total test images**: 960 (240 per class)
-- **Correctly classified**: 894
-- **Test accuracy**: **93.1%**
-- **Training accuracy**: 95.2%
+- **Correctly classified**: 874
+- **Test accuracy**: **91.1%**
+- **Training accuracy**: 93.2%
 
-This means: Out of 100 MRI scans, we get about 93 correct. That's pretty good!
+This means: Out of 100 MRI scans, we get about 91 correct. That's reliable performance!
 
 ## 📋 Per-Class Performance
 

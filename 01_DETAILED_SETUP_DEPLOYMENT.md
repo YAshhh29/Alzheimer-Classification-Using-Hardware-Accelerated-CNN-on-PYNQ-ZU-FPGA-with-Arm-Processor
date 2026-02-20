@@ -6,12 +6,10 @@
 
 ![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen?style=for-the-badge) 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge) 
-![FPGA](https://img.shields.io/badge/FPGA-Xilinx%20PYNQ--ZU-orange?style=for-the-badge) 
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-![Accuracy](https://img.shields.io/badge/Accuracy-94%25-brightgreen?style=for-the-badge)
+![FPGA](https://img.shields.io/badge/FPGA-Xilinx%20PYNQ--ZU-orange?style=for-the-badge)
 ![Speedup](https://img.shields.io/badge/Speedup-7.7x-red?style=for-the-badge)
 
-**[📖 Documentation](../README.md#-complete-documentation) • [🏗️ Architecture](02_PROJECT_ARCHITECTURE.md) • [🧪 Results](03_RESULTS_TESTBENCH.md) • [⚙️ Implementation](04_IMPLEMENTATION_GUIDE.md)**
+**[🏗️ Architecture](02_PROJECT_ARCHITECTURE.md) • [🧪 Results](03_RESULTS_TESTBENCH.md) • [⚙️ Implementation](04_IMPLEMENTATION_GUIDE.md)**
 
 </div>
 
