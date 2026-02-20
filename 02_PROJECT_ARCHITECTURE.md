@@ -56,7 +56,7 @@ So we built a solution that runs **right on edge hardware** (FPGA) in the hospit
             ┌─────────────────────────┐
             │  Output                 │
             │  Class: Mild Dementia   │
-            │  Confidence: 94.2%      │
+            │  Confidence: 91.1%      │
             └─────────────────────────┘
 ```
 
